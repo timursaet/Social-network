@@ -48,6 +48,15 @@ body {
         "content sideBar";
 }
 
+.wrapper__header_save {
+    justify-self: end;
+    color: #bd4664;
+}
+
+a {
+    text-decoration: none;
+}
+
 .content__data {
     grid-area: content;
 } 
@@ -180,11 +189,26 @@ body {
     padding: 0.5em;
 }
 
-.side-Bar_avatar {
+.side-Bar__avatar {
+    position: relative;
+}
+
+.side-Bar__avatar_avatar {
     width: 250px;
     height: 320px;
     padding: 0.5em;
     background: white;
+}
+
+.side-Bar__avatar_edit {
+    display: block;
+    background:#171718;
+    opacity: 0.6;
+    text-align: end;
+    width:247px;
+    position: absolute;
+    bottom: 12px;
+    right: 9px;
 }
 
 .side-Bar__link {
@@ -242,13 +266,4 @@ body {
 .side-Bar__mess__message__data_mess {
     grid-area: mesmes;
     font-size: 10px;
-}
-
-.wrapper__header_save {
-    justify-self: end;
-    color: #bd4664;
-}
-
-a {
-    text-decoration: none;
 }
