@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+} 
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background: #f6f6f6;
+}
+
+.wrapper {
+    width: 850px;
+    margin: 0 auto;
+}
+
+.wrapper__header {
+    display: grid;
+    grid-template-columns: 1fr 35px 50px;
+    background: #363c5f;
+    align-items: center;
+    border-radius: 0 0 0.5em 0.5em;
+}
+
+.wrapper__header_status {   
+    margin-left: 1em;
+    color: white;
+}
+
+.wrapper__header_edit {
+    justify-self: end;
+    color: #4e5377;
+}
+
+.wrapper__header__avatar {
+    margin: auto;
+}
+
+.wrapper__header__avatar_view {
+    border-radius: 0.7em;
+    margin: auto;
+    width: 25px;
+    height: 25px;
+}
+
+.wrapper__content {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    grid-template-areas: 
+        "content sideBar";
+}
+
+.content__data {
+    grid-area: content;
+} 
+
+.content__data__info {
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+    padding: 1em;
+    background: white;
+}
+
+.content__data__info_name {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 0.4em;
+}
+
+.content__data__info_status {
+    font-size: 0.8em;
+    margin-bottom: 1em;
+}
+
+.content__data__info_data {
+    font-size: 14px;
+    color: #cacaca;
+    padding-bottom: 0.4em;
+}
+
+.content__data__info_view {
+    color: black;
+}
+
+.content__data__info__details {
+    display: grid;
+}
+
+.content__data__info__details_cheked {
+    color: #818feb;
+    padding-bottom: 0.6em;    
+}
+
+.content__data__info__details_cheked:hover {
+    cursor: pointer;
+}
+
+.content__data__gallery { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    background: white;
+    margin-bottom: 0.6em;
+}
+
+.content__data__gallery_view {
+    margin: 0.4em;
+    width: 100px;
+    height: 82px;
+}
+
+.content__wall {
+    background: white;
+}
+
+.write {
+    display: grid;
+    grid-template-rows: 50px 30px;
+    grid-template-areas: 
+        "data"
+        "message";
+}
+
+.write__info {
+    grid-area: data;
+    display: grid;
+    grid-template-columns: 50px 150px 356px;
+    margin: 0.2em;
+    grid-template-areas: 
+        "img data deletet";
+}
+
+.write__info__img {
+    grid-area: img; 
+}
+
+.write__info__img_img {
+    border-radius: 0.9em;
+    width: 40px;
+    height: 40px;
+}
+
+.write__info__data {
+    grid-area: data;
+}
+
+.write__info__data_name {
+    color: #363c5f;
+    font-weight: bold;
+}
+
+.write__info__data_online {
+    color: #c8c8c8;
+    font-size: 13px;
+}
+
+.write__info__delete {
+    display: grid;
+    justify-content: end;
+    grid-area: deletet;
+}
+
+.write__info__delete_img {
+    width: 15px;
+    height: 18px;
+}
+
+.write_photo {
+    width: 550px;
+    height: 450px;
+}
+
+.mess {
+    grid-area: message;
+}
+
+.content__side-Bar {
+    grid-area: sideBar;
+    display: grid;
+    justify-content: center;
+    padding: 0.5em;
+}
+
+.side-Bar_avatar {
+    width: 250px;
+    height: 320px;
+    padding: 0.5em;
+    background: white;
+}
+
+.side-Bar__link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: white;
+    margin-bottom: 0.4em;
+}
+
+.side-Bar__link_img {
+    width: 82px;
+    height: 82px;  
+    text-align: center; 
+    font-size: 14px;
+}
+
+.side-Bar__mess {
+    background: white;  
+}
+
+.side-Bar__mess_title {
+    color: #d3d3d3;
+    font-size: 16px;
+    margin: 0.4em;
+}
+
+.side-Bar__mess__message {
+    display: grid;
+    grid-template-columns: 30px 100px 50px;
+    grid-template-areas: 
+        "photo name"
+        "photo mesmes";
+}
+
+.side-Bar__mess__message__photo {
+    grid-area: photo;
+}
+
+.side-Bar__mess__message__photo_view {
+    border-radius: 1em;
+    width: 25px;
+    height: 25px;
+}
+
+.side-Bar__mess__message__data_name {
+    grid-area: name;
+    grid-template-columns: 15px 105px;
+    color: #363c5f;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.side-Bar__mess__message__data_mess {
+    grid-area: mesmes;
+    font-size: 10px;
+}
+
+.wrapper__header_save {
+    justify-self: end;
+    color: #bd4664;
+}
+
+a {
+    text-decoration: none;
+}
