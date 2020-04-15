@@ -252,7 +252,7 @@ a {
 }
 
 .side-Bar__avatar_edit {
-    display: block;
+    display: none;
     background:#171718;
     opacity: 0.6;
     text-align: end;
@@ -260,6 +260,10 @@ a {
     position: absolute;
     bottom: 12px;
     right: 9px;
+}
+
+.pointer-pen {
+    cursor: pointer;
 }
 
 .side-Bar__link {
