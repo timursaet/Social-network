@@ -1,5 +1,5 @@
-define(["component/information", "component/gallery", "component/wall","component/header","component/avatar", 
-"component/links", "component/message"], function(information, gallery, wall, header, avatar, links, message){
+define(["component/information/information", "component/gallery/gallery", "component/wall/wall","component/header/header","component/avatar/avatar", 
+"component/links/links", "component/message/message"], function(information, gallery, wall, header, avatar, links, message){
 	
 	return `<div class="wrapper">
             ${header}

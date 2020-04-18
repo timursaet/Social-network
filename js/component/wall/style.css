@@ -1,0 +1,92 @@
+.content__wall {
+    background: white;
+}
+
+.write {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 50px 30px;
+    grid-template-rows: 50px 30px;
+        grid-template-areas: 
+        "data"
+        "message";
+}
+
+.write__info {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: data;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50px 150px 356px;
+    grid-template-columns: 50px 150px 356px;
+    margin: 0.2em;
+        grid-template-areas: 
+        "img data deletet";
+}
+
+.write__info > .write__info {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+}
+
+.write__info__img {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: img; 
+}
+
+.write__info__img_img {
+    border-radius: 0.9em;
+    width: 40px;
+    height: 40px;
+}
+
+.write__info__data {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: data;
+}
+
+.write__info > .write__info__data {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+}
+
+.write__info__data_name {
+    color: #363c5f;
+    font-weight: bold;
+}
+
+.write__info__data_online {
+    color: #c8c8c8;
+    font-size: 13px;
+}
+
+.write__info__delete {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    grid-area: deletet;
+}
+
+.write__info__delete_img {
+    cursor: pointer;
+    width: 15px;
+    height: 18px;
+}
+
+.write_photo {
+    width: 550px;
+    height: 450px;
+}
+
+.mess {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: message;
+}

@@ -1,0 +1,23 @@
+.side-Bar__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    background: white;
+    margin-bottom: 0.4em;
+}
+
+.side-Bar__link_img {
+    width: 82px;
+    height: 82px;  
+    text-align: center; 
+    font-size: 14px;
+}

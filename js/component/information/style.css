@@ -1,0 +1,114 @@
+.content__data__info {
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+    padding: 1em;
+    background: white;
+    display: grid;
+    grid-template-columns: 180px 250px;
+    grid-template-rows: 25px 30px 25px 25px;
+    grid-template-areas: 
+        "name name"
+        "status status"
+        "data data-view"
+        "city city-view"
+        "sp sp-view"
+        "details_cheked details_cheked"
+}
+
+.content__data__info_name {
+    grid-area: name;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 0.4em;
+}
+
+.content__data__info_status {
+    grid-area: status;
+    font-size: 0.8em;
+    margin-bottom: 1em;
+}
+
+.content__data__info_data {
+    grid-area: data;
+    font-size: 14px;
+    color: #cacaca;
+    padding-bottom: 0.4em;
+}
+
+.content__data__info_viewDate{
+    grid-area: data-view;
+    color: black;
+    font-size: 13px;
+}
+
+.content__data__info_city {
+    grid-area: city;
+    font-size: 14px;
+    color: #cacaca;
+    padding-bottom: 0.4em;
+}
+
+.content__data__info_viewCity {
+    grid-area: city-view;
+    color: black;
+    font-size: 13px;
+}
+
+.content__data__info_sp {
+    grid-area: sp;
+    font-size: 14px;
+    color: #cacaca;
+    padding-bottom: 0.4em; 
+}
+
+.content__data__info_viewSp {
+    grid-area: sp-view;
+    color: black;
+    font-size: 13px    
+}
+
+.content__data__info__details_cheked {
+    grid-area: details_cheked;
+    color: #818feb;
+    padding-bottom: 0.6em;    
+}
+
+.content__data__info__details_cheked:hover {
+    cursor: pointer;
+}
+
+.content__data__info__details {
+    display: -ms-grid;
+    display: none;
+    grid-template-columns: 180px 250px;
+    grid-template-rows: 25px 25px;
+    grid-template-areas: 
+        "edu viewEdu"
+        "job viewJob";
+}
+
+.content__data__info_edu {
+    grid-area: edu;
+    font-size: 14px;
+    color: #cacaca;
+    padding-bottom: 0.4em;
+}
+
+.content__data__info_viewEdu {
+    grid-area: viewEdu;
+    color: black;
+    font-size: 13px  
+}
+
+.content__data__info_job {
+    grid-area: job;
+    font-size: 14px;
+    color: #cacaca;
+    padding-bottom: 0.4em;
+}
+
+.content__data__info_viewJob {
+    grid-area: viewJob;
+    color: black;
+    font-size: 13px    
+}

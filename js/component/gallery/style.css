@@ -1,0 +1,22 @@
+.content__data__gallery { 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    background: white;
+    margin-bottom: 0.6em;
+}
+
+.content__data__gallery_view {
+    margin: 0.4em;
+    width: 100px;
+    height: 82px;
+}

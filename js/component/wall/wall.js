@@ -1,5 +1,11 @@
 define([], function () {
-	'use strict';
+    'use strict';
+    
+    let link = document.createElement("link");
+        link.type = "text/css";
+        link.rel = "stylesheet";
+        link.href = 'js/component/wall/style.css';
+    document.getElementsByTagName("head")[0].appendChild(link);
 
 	return `<div class="content__wall write">
             <div class="write">

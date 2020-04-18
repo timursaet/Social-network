@@ -9,8 +9,8 @@ require.config({
 	}
 });
 
-require(["page/profile"], function(Profile){
-	document.body.innerHTML = Profile;
+require(["page/profile"], function(profile){
+	document.body.innerHTML = profile;
 });
 
 

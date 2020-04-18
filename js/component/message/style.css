@@ -1,0 +1,50 @@
+.side-Bar__mess {
+    background: white;  
+}
+
+.side-Bar__mess_title {
+    color: #d3d3d3;
+    font-size: 16px;
+    margin: 0.4em;
+}
+
+.side-Bar__mess__message {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 30px 100px 50px;
+    grid-template-columns: 30px 100px 50px;
+        grid-template-areas: 
+        "photo name"
+        "photo mesmes";
+}
+
+.side-Bar__mess__message__photo {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: photo;
+}
+
+.side-Bar__mess__message__photo_view {
+    border-radius: 1em;
+    width: 25px;
+    height: 25px;
+}
+
+.side-Bar__mess__message__data_name {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: name;
+    -ms-grid-columns: 15px 105px;
+    grid-template-columns: 15px 105px;
+    color: #363c5f;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.side-Bar__mess__message__data_mess {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: mesmes;
+    font-size: 10px;
+}

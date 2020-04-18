@@ -1,26 +1,28 @@
-define(function () {
+define(["server/users"], function (data) {
 	
 	let link = document.createElement("link");
 	    link.type = "text/css";
 	    link.rel = "stylesheet";
-	    link.href = 'css/style.css';
-        document.getElementsByTagName("head")[0].appendChild(link);
+	    link.href = 'js/component/information/style.css';
+    document.getElementsByTagName("head")[0].appendChild(link);
+
+    let info = data.info;
         
     return `<div class="content__data__info">
-                <div class="content__data__info_name">Саетгареев Тимур</div>
-                <div class="content__data__info_status">Хороший и общительный человек</div>
+                <div class="content__data__info_name">${info.name}</div>
+                <div class="content__data__info_status">${info.status}</div>
                 <div class="content__data__info_data">День рождения</div>  
-                <span class="content__data__info_viewDate">09.10.1997</span>
+                <span class="content__data__info_viewDate">${info.birthday}</span>
                 <div class="content__data__info_city">Город</div> 
-                <span class="content__data__info_viewCity">Уфа</span>
+                <span class="content__data__info_viewCity">${info.city}</span>
                 <div class="content__data__info_sp">Семейное положение</div>
-                <span class="content__data__info_viewSp">Ищу тебя</span>
+                <span class="content__data__info_viewSp">${info.maitalStatus}</span>
                 <div class="content__data__info__details_cheked">Показать подробности</div>
                 <div class="content__data__info__details">
                     <div class="content__data__info_edu">Образование</div> 
-                    <span class="content__data__info_viewEdu">БГУ 2020</span>
+                    <span class="content__data__info_viewEdu">${info.education}</span>
                     <div class="content__data__info_job">Место работы</div>
-                    <span class="content__data__info_viewJob">IT Тензор</span>
+                    <span class="content__data__info_viewJob">${info.job}</span>
                 </div>
             </div>`;
 	
