@@ -1,4 +1,4 @@
-define(["server/users"], function (photos) {
+define(["server/users"], function (data) {
 	
 	let link = document.createElement("link");
 	    link.type = "text/css";
@@ -6,13 +6,12 @@ define(["server/users"], function (photos) {
 	    link.href = 'js/component/gallery/style.css';
 	document.getElementsByTagName("head")[0].appendChild(link);
 
-	let items = photos.gallery.images;
-	let slide = '';
-	for (let i = 0; i < items.length; i++){
-		slide += `<img src="${items[i]}" class="content__data__gallery_view" alt="cat1.jpg">`;
-	}
-	    
+	let photos = data.gallery.images, photo = '';
+	photos.forEach((item) => {
+		photo += `<img src="${item}" class="content__data__gallery_view" alt="cat1.jpg">`;	
+	})
+
 	return `<div class="content__data__gallery">
-               ${slide}
+               ${photo}
             </div>`;
 });
