@@ -1,4 +1,4 @@
-define(["server/users"], function (data) {
+define(["server/users"], (data) => {
     'use strict';
     
     let link = document.createElement("link");

@@ -1,4 +1,4 @@
-define(["server/users"], function (data) {
+define(["server/users"], (data) => {
 	
 	let link = document.createElement("link");
 	    link.type = "text/css";

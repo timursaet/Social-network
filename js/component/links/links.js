@@ -1,4 +1,4 @@
-define(function () {
+define(()  => {
     'use strict';
     
     let link = document.createElement("link");
