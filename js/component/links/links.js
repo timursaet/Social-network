@@ -1,12 +1,6 @@
-define(()  => {
+define(["css!component/links/style.css"], ()  => {
     'use strict';
     
-    let link = document.createElement("link");
-        link.type = "text/css";
-        link.rel = "stylesheet";
-        link.href = 'js/component/links/style.css';
-    document.getElementsByTagName("head")[0].appendChild(link);
-
     return `<div class="side-Bar__link">
     
             <div class="side-Bar__link_img">
@@ -40,4 +34,5 @@ define(()  => {
             </div>
 
         </div>`;
+        
 });

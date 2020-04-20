@@ -1,11 +1,5 @@
-define(() => {
+define(["css!component/message/style.css"], () => {
     'use strict';
-    
-    let link = document.createElement("link");
-        link.type = "text/css";
-        link.rel = "stylesheet";
-        link.href = 'js/component/message/style.css';
-    document.getElementsByTagName("head")[0].appendChild(link);
 
 	return `<div class="side-Bar__mess">
                 <p class="side-Bar__mess_title">Сообщения</p>
@@ -19,4 +13,5 @@ define(() => {
                     </div>
                 </div>
             </div>`;
+            
 });
